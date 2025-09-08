@@ -255,7 +255,8 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 
 
-@media screen and (max-width: 393px) and (max-height: 852px) {
+
+@media screen and (max-width: 393px) and (min-width: 389px)  {
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.8); /* уменьшаем всю сцену */
@@ -267,7 +268,7 @@ padding: 30px;
 bottom: 80px;
 }
   .card {
-    width: calc(21.9% - 8px);
+    width: calc(20.9% - 8px);
     padding: 6px;
   }
 
@@ -577,123 +578,6 @@ bottom: 250px;
   }
 
 }
-@media screen and (max-width: 480px) and (max-height: 1020px) {
-      img[data-platform="1"] {
-    top: 120px !important;
-  }
-  img[data-platform="2"] {
-    top: 260px !important;
-  }
-  img[data-platform="3"] {
-    top: 410px !important;
-  }
-  img[data-platform="4"] {
-    top: 70px !important;
-  }
-  img[src="img/700.png"] {
-    top: 180px !important;
-  }
-  img[src="img/600.png"] {
-    top: 290px !important;
-  }
-  .platform-text[data-platform="1"] {
-    top: 140px !important;
-  }
-  .platform-text[data-platform="2"] {
-    top: 260px !important;
-  }
-  .platform-text[data-platform="3"] {
-    top: 370px !important;
-  }
-  .platform-text[data-platform="4"] {
-    top: 170px !important;
-  }
-  .platform-text[data-platform="5"] {
-    top: 270px !important;
-  }
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.7); /* уменьшаем всю сцену */
-padding: 40px;
-    width: 100%;
-        bottom: 140px;
-  }
-.bottom-block{
-bottom: 250px;
-}
-  .card {
-    width: calc(21.9% - 8px);
-    padding: 6px;
-  }
-
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
-@media screen and (max-width: 393px) and (max-height: 852px) {
-      img[data-platform="1"] {
-    top: 120px !important;
-  }
-  img[data-platform="2"] {
-    top: 260px !important;
-  }
-  img[data-platform="3"] {
-    top: 410px !important;
-  }
-  img[data-platform="4"] {
-    top: 70px !important;
-  }
-  img[src="img/700.png"] {
-    top: 180px !important;
-  }
-  img[src="img/600.png"] {
-    top: 290px !important;
-  }
-  .platform-text[data-platform="1"] {
-    top: 140px !important;
-  }
-  .platform-text[data-platform="2"] {
-    top: 260px !important;
-  }
-  .platform-text[data-platform="3"] {
-    top: 370px !important;
-  }
-  .platform-text[data-platform="4"] {
-    top: 170px !important;
-  }
-  .platform-text[data-platform="5"] {
-    top: 270px !important;
-  }
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.6); /* уменьшаем всю сцену */
-padding: 40px;
-    width: 100%;
-        bottom: 140px;
-        right: 5%;
-  }
-.bottom-block{
-bottom: 250px;
-}
-  .card {
-    width: calc(21.9% - 8px);
-    padding: 6px;
-  }
-
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
 @media screen and (max-width: 384px) and (max-height: 854px) {
       img[data-platform="1"] {
     top: 120px !important;
@@ -741,6 +625,65 @@ bottom: 250px;
 }
   .card {
     width: calc(20.9% - 8px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+@media screen and (max-height: 1020px) {
+      img[data-platform="1"] {
+    top: 120px !important;
+  }
+  img[data-platform="2"] {
+    top: 260px !important;
+  }
+  img[data-platform="3"] {
+    top: 410px !important;
+  }
+  img[data-platform="4"] {
+    top: 70px !important;
+  }
+  img[src="img/700.png"] {
+    top: 180px !important;
+  }
+  img[src="img/600.png"] {
+    top: 290px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 260px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 370px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 170px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 270px !important;
+  }
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.8); /* уменьшаем всю сцену */
+padding: 40px;
+    width: 100%;
+        bottom: 100px;
+        right: 5%;
+  }
+.bottom-block{
+bottom: 150px;
+}
+  .card {
+    width: calc(21.7% - 8px);
     padding: 6px;
   }
 
@@ -812,6 +755,10 @@ bottom: 160px;
   }
 
 }
+
+
+
+
 
 
 
