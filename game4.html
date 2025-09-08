@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Все платформы с настраиваемыми изображениями</title>
 <style>
     @font-face {
@@ -253,31 +255,8 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 
 
-@media screen and (max-width: 393px) and (max-height: 852px)  {
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.8); /* уменьшаем всю сцену */
-padding: 30px;
-    width: 100%;
-        bottom: 100px;
-  }
-.bottom-block{
-bottom: 140px;
-}
-  .card {
-    width: calc(20.9% - 8px);
-    padding: 6px;
-  }
 
-  .card-img {
-    width: 28px;
-  }
 
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
 
 
 @media screen and (max-width: 393px)  {
@@ -456,9 +435,11 @@ bottom: 120px;
   }
   img[src="img/700.png"] {
     top: 180px !important;
+        z-index: 999999;
   }
   img[src="img/600.png"] {
     top: 290px !important;
+    z-index: 999999;
   }
   .platform-text[data-platform="1"] {
     top: 140px !important;
@@ -474,17 +455,18 @@ bottom: 120px;
   }
   .platform-text[data-platform="5"] {
     top: 270px !important;
+        z-index: 999999;
   }
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.7); /* уменьшаем всю сцену */
 padding: 40px;
     width: 100%;
-        bottom: 100px;
+        bottom: 130px;
         right: 5%;
   }
 .bottom-block{
-bottom: 180px;
+bottom: 230px;
 }
   .card {
     width: calc(21.0% - 6px);
@@ -687,6 +669,8 @@ bottom: 160px;
 
 
 
+
+
 /* Контейнер модального окна (фон) */
 .modal {
   display: none; 
@@ -709,7 +693,7 @@ bottom: 160px;
   background-color: #fefefe;
   width: 90%; 
   max-width: 600px;
-  height: 70vh; 
+  height: 80vh; 
   border-radius: 15px 15px 0 0; 
   position: relative;
   display: flex;
@@ -1581,7 +1565,6 @@ document.querySelectorAll(".card").forEach((card, index) => {
 
       const container = document.querySelector('.cards-container');
           document.querySelector(".ZZZ").style.display = "none";
-
       // Проверка на наличие серых карточек
       const grays = container.querySelectorAll('.card.gray');
       if (grays.length > 0) {
