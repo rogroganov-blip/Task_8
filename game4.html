@@ -252,29 +252,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
-@media screen and (max-width: 440px) {
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.9); /* уменьшаем всю сцену */
-padding: 20px;
-    width: 100%;
-    
-  }
-
-  .card {
-    width: calc(21.9% - 8px);
-    padding: 6px;
-  }
-
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}@media screen and (max-height: 730px) {
+@media screen and (max-height: 730px) {
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.8); /* уменьшаем всю сцену */
@@ -324,7 +302,30 @@ bottom: 220px;
   }
 
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.9); /* уменьшаем всю сцену */
+padding: 20px;
+    width: 100%;
+    
+  }
+
+  .card {
+    width: calc(21.9% - 8px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+@media screen and (max-width: 412px) {
     img[data-platform="1"] {
     top: 110px !important;
   }
@@ -360,16 +361,16 @@ bottom: 220px;
   }
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.9); /* уменьшаем всю сцену */
+    transform: scale(0.8); /* уменьшаем всю сцену */
 padding: 30px;
     width: 100%;
-        bottom: 60px;
+    
   }
 .bottom-block{
-bottom: 40px;
+bottom: 20px;
 }
   .card {
-    width: calc(21.9% - 8px);
+    width: calc(21.7% - 8px);
     padding: 6px;
     
   }
@@ -423,15 +424,15 @@ bottom: 40px;
   }
   .middle-block {
     aspect-ratio: 4 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.8); /* уменьшаем всю сцену */
+    transform: scale(0.7); /* уменьшаем всю сцену */
 padding: 40px;
     width: 100%;
-    right: 20px;
-    bottom: 110px;
+    right: 30px;
+    bottom: 60px;
   }
 
 .bottom-block{
-bottom: 130px;
+bottom: 100px;
 }
 
 .ofpnmcalabcbjgholdjcjblkibolbppb{
@@ -440,7 +441,7 @@ bottom: 130px;
 
 }
   .card {
-    width: calc(21.8% - 8px);
+    width: calc(20.8% - 8px);
     padding: 6px;
 
   }
@@ -463,12 +464,12 @@ bottom: 130px;
 padding: 60px;
     width: 100%;
     right: 40px;
-    bottom: 140px;
+    bottom: 120px;
 
   }
 
 .bottom-block{
-bottom: 220px;
+bottom: 200px;
 }
 .modal-add-btn{
   width: 70%;
@@ -566,12 +567,14 @@ bottom: 220px;
     transform: scale(0.7); /* уменьшаем всю сцену */
 padding: 60px;
     width: 100%;
-    right: 40px;
-    bottom: 140px;
+    right: 30px;
+    bottom: 100px;
   }
-
+.model_mini_chanter{
+  top: 130px;
+}
 .bottom-block{
-bottom: 160px;
+bottom: 120px;
 }
 
 .ofpnmcalabcbjgholdjcjblkibolbppb{
@@ -580,15 +583,13 @@ bottom: 160px;
 
 }
   .card {
-    width: calc(20% - 8px);
-    height: 80px;
-    padding: 8px;
+    width: calc(20.8% - 8px);
+    padding: 6px;
 
   }
 
   .card-img {
     width: 28px;
-    height: 28px;
   }
 
   .cards-buttons {
@@ -596,7 +597,6 @@ bottom: 160px;
   }
 
 }
-
 /* Контейнер модального окна (фон) */
 .modal {
   display: none; 
