@@ -42,6 +42,73 @@ html, body {
     width: 100%;
     justify-content: space-between; /* Дополнительно гарантируем распределение */
 }
+@media screen and (max-width: 390px) {
+  img[data-platform="1"] {
+    top: 130px !important;
+  }
+  img[data-platform="2"] {
+    top: 250px !important;
+  }
+  img[data-platform="3"] {
+    top: 410px !important;
+  }
+  img[data-platform="4"] {
+    top: 80px !important;
+  }
+  img[src="img/700.png"] {
+    top: 190px !important;
+  }
+  img[src="img/600.png"] {
+    top: 300px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 270px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 380px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 180px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 280px !important;
+  }
+  .middle-block {
+    aspect-ratio: 4 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.7); /* уменьшаем всю сцену */
+padding: 40px;
+    width: 100%;
+    right: 30px;
+    bottom: 60px;
+  }
+
+.bottom-block{
+bottom: 100px;
+}
+
+.ofpnmcalabcbjgholdjcjblkibolbppb{
+  width: 99%;
+    overflow-x: hidden; /* не даст прокручивать влево/вправо */
+
+}
+  .card {
+    width: calc(20.8% - 8px);
+    padding: 6px;
+
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
 
 .left-block { 
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
