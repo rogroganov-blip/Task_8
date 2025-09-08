@@ -251,8 +251,15 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
-
-
+/* Текст под картинкой */
+.card-text {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+.text_i{
+    color: #02923A;
+}
 
 @media screen and (max-width: 393px)  {
   .middle-block {
@@ -658,20 +665,6 @@ bottom: 160px;
 
 
 
-
-
-
-/* Текст под картинкой */
-.card-text {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 12px;
-}
-.text_i{
-    color: #02923A;
-}
-
-
 /* Контейнер модального окна (фон) */
 .modal {
   display: none; 
@@ -791,37 +784,38 @@ bottom: 160px;
 .g {
     
   border-radius: 15px;
-  max-width: 700px;
-  width: 95%;
+  width: 80%;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
   gap: 30px;      /* поверх всего */
     position: fixed;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
   color: #333333;
-  padding: 20px 40px;
+  padding: 5px 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   z-index: 1000;
 }
 #myBtn{
-  padding: 20px 130px;
+  padding: 20px 120px;
   background-color: #474646; /* цвет текста кнопки Сбросить */
   color: #fff;
   border: none;
+  margin-top: 50px;
+  margin-bottom: 20px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
 }
 .model_mini_chanter {
   position: fixed;
-  top: 50px;
+  top: 10px;
   left: 0px;
   padding: 10px;
   width: 100%;
@@ -999,7 +993,7 @@ bottom: 160px;
 </div>
 <div class="model_mini_chanter">
   <div class="modal_content">
-    <p id="e">Кликните по кассе самообслуживания</p>
+    <p id="e">Перетащи технологию в зону</p>
   </div>
 </div>
 
