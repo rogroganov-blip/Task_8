@@ -14,58 +14,9 @@ body{
       overflow-y: hidden; /* запрет вертикального */
   overflow-x: hidden;
 }
-@media screen and (max-height: 730px) {
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.8); /* уменьшаем всю сцену */
-padding: 20px;
-    width: 100%;
-    bottom: 100px;
-  }
-.bottom-block{
-bottom: 190px;
-}
-  .card {
-    width: calc(21.9% - 8px);
-    padding: 6px;
-  }
 
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
-@media screen and (max-height: 620px) {
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.6); /* уменьшаем всю сцену */
-padding: 20px;
-    width: 100%;
-    bottom: 130px;
-  }
-.bottom-block{
-bottom: 280px;
-}
-  .card {
-    width: calc(21.9% - 8px);
-    padding: 6px;
-  }
-
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
 .top-block {
-      filter: blur(12px);
+      filter: blur(6px);
     height: 8vh;
     display: flex;
     align-items: center;
@@ -75,7 +26,7 @@ bottom: 280px;
 }
 
 .container {
-          filter: blur(12px);
+          filter: blur(6px);
     display: flex;
     width: 100%;
     justify-content: space-between; /* Дополнительно гарантируем распределение */
@@ -121,7 +72,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .middle-block {
-          filter: blur(12px);
+          filter: blur(6px);
   position: relative;
   flex: none;
   width: 100%;
@@ -176,7 +127,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 .bottom-menu .menu-left {
   font-weight: bold;
   font-size: 20px;
-        filter: blur(12px);
+        filter: blur(6px);
 }
 
 .bottom-menu .menu-right {
@@ -188,7 +139,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
   padding: 7px 8px;
   border-radius: 10px;
-        filter: blur(12px);
+        filter: blur(6px);
 }
 
 .bottom-menu .menu-right img {
@@ -253,7 +204,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 .card-top img {
   width: 16px;
   height: 16px;
-          filter: blur(12px);
+          filter: blur(6px);
 }
 
 .card-top_2 img {
@@ -267,7 +218,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 40px;
   max-width: 100%;
   height: auto;
-          filter: blur(12px);
+          filter: blur(6px);
 }
 /* Карточка */
 .card-img_2 {
@@ -285,7 +236,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-top: 15px;
   justify-content: center; /* выравнивание по центру */
   width: 100%;
-        filter: blur(12px);
+        filter: blur(6px);
 }
 
 .cards-buttons .btn {
@@ -299,7 +250,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: #575756;
   color: #fff;
   font-size: 20px;
-  padding: 16px 100px;
+  padding: 16px 120px;
   text-align: center;
   border: none;
   border-radius: 5px;
@@ -320,7 +271,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 /* Текст под картинкой */
 .card-text {
-              filter: blur(12px);
+              filter: blur(6px);
   margin-top: 5px;
   text-align: center;
   font-size: 14px;
@@ -329,22 +280,28 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 .card-text_2 {
   margin-top: 5px;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
 }
 .text_i{
     color: #02923A;
 }
 
 
-@media screen and (max-width: 440px) {
-  .middle-block {
-    aspect-ratio: 3.1 / 3.4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.9); /* уменьшаем всю сцену */
-    transform-origin: top center;
-  }
 
+
+@media screen and (max-width: 393px)  {
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.8); /* уменьшаем всю сцену */
+padding: 30px;
+    width: 100%;
+        bottom: 100px;
+  }
+.bottom-block{
+bottom: 160px;
+}
   .card {
-    width: calc(21% - 8px);
+    width: calc(20.9% - 8px);
     padding: 6px;
   }
 
@@ -353,9 +310,389 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
   .cards-buttons {
+    margin-top: 20px;
   }
 
 }
+@media screen and (max-width: 430px)  {
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.8); /* уменьшаем всю сцену */
+padding: 30px;
+    width: 100%;
+        bottom: 100px;
+  }
+.bottom-block{
+bottom: 190px;
+}
+  .card {
+    width: calc(20.9% - 8px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+@media screen and (max-width: 450px)  {
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.8); /* уменьшаем всю сцену */
+padding: 30px;
+    width: 100%;
+        bottom: 100px;
+  }
+.bottom-block{
+bottom: 220px;
+}
+  .card {
+    width: calc(20.9% - 8px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+@media screen and (max-width: 414px) {
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.8); /* уменьшаем всю сцену */
+padding: 30px;
+    width: 100%;
+        bottom: 100px;
+  }
+.bottom-block{
+bottom: 140px;
+}
+  .card {
+    width: calc(20.9% - 8px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+      img[data-platform="1"] {
+    top: 120px !important;
+  }
+  img[data-platform="2"] {
+    top: 260px !important;
+  }
+  img[data-platform="3"] {
+    top: 410px !important;
+  }
+  img[data-platform="4"] {
+    top: 70px !important;
+  }
+  img[src="img/700.png"] {
+    top: 180px !important;
+  }
+  img[src="img/600.png"] {
+    top: 290px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 260px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 370px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 170px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 270px !important;
+  }
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.7); /* уменьшаем всю сцену */
+padding: 40px;
+    width: 100%;
+        bottom: 100px;
+        right: 5%;
+  }
+.bottom-block{
+bottom: 120px;
+}
+  .card {
+    width: calc(21.0% - 6px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 390px){
+      img[data-platform="1"] {
+    top: 120px !important;
+  }
+  img[data-platform="2"] {
+    top: 260px !important;
+  }
+  img[data-platform="3"] {
+    top: 410px !important;
+  }
+  img[data-platform="4"] {
+    top: 70px !important;
+  }
+  img[src="img/700.png"] {
+    top: 180px !important;
+  }
+  img[src="img/600.png"] {
+    top: 290px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 260px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 370px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 170px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 270px !important;
+  }
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.7); /* уменьшаем всю сцену */
+padding: 40px;
+    width: 100%;
+        bottom: 100px;
+        right: 5%;
+  }
+.bottom-block{
+bottom: 180px;
+}
+  .card {
+    width: calc(21.0% - 6px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 375px){
+      img[data-platform="1"] {
+    top: 120px !important;
+  }
+  img[data-platform="2"] {
+    top: 260px !important;
+  }
+  img[data-platform="3"] {
+    top: 410px !important;
+  }
+  img[data-platform="4"] {
+    top: 70px !important;
+  }
+  img[src="img/700.png"] {
+    top: 180px !important;
+  }
+  img[src="img/600.png"] {
+    top: 290px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 260px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 370px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 170px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 270px !important;
+  }
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.6); /* уменьшаем всю сцену */
+padding: 40px;
+    width: 100%;
+        bottom: 140px;
+        right: 5%;
+  }
+.bottom-block{
+bottom: 250px;
+}
+  .card {
+    width: calc(21.0% - 6px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+@media screen and (max-width: 384px){
+      img[data-platform="1"] {
+    top: 120px !important;
+  }
+  img[data-platform="2"] {
+    top: 260px !important;
+  }
+  img[data-platform="3"] {
+    top: 410px !important;
+  }
+  img[data-platform="4"] {
+    top: 70px !important;
+  }
+  img[src="img/700.png"] {
+    top: 180px !important;
+  }
+  img[src="img/600.png"] {
+    top: 290px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 260px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 370px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 170px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 270px !important;
+  }
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.6); /* уменьшаем всю сцену */
+padding: 40px;
+    width: 100%;
+        bottom: 140px;
+        right: 5%;
+  }
+.bottom-block{
+bottom: 250px;
+}
+  .card {
+    width: calc(20.9% - 8px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+@media screen and (max-width: 360px) {
+      img[data-platform="1"] {
+    top: 140px !important;
+  }
+  img[data-platform="2"] {
+    top: 280px !important;
+  }
+  img[data-platform="3"] {
+    top: 430px !important;
+  }
+  img[data-platform="4"] {
+    top: 90px !important;
+  }
+  img[src="img/700.png"] {
+    top: 200px !important;
+  }
+  img[src="img/600.png"] {
+    top: 310px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 160px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 280px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 390px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 190px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 290px !important;
+  }
+  .middle-block {
+    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
+    transform: scale(0.7); /* уменьшаем всю сцену */
+padding: 60px;
+    width: 100%;
+        bottom: 140px;
+        right: 10%;
+  }
+.bottom-block{
+bottom: 160px;
+}
+  .card {
+    width: calc(21.0% - 8px);
+    padding: 6px;
+  }
+
+  .card-img {
+    width: 28px;
+  }
+
+  .cards-buttons {
+    margin-top: 20px;
+  }
+
+}
+
+
+
+
+
 
 /* Контейнер модального окна (фон) */
 .modal {
@@ -473,8 +810,8 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 /* Задний фон */
 .modal-overlay {
   position: fixed;
-  bottom: 90px; left: 5%;
-  width: 80%; height: 100%;
+  bottom: 180px;
+  width: 97%; height: 90%;
   display: flex;
   justify-content: center;
   align-items: center; /* окно по центру */
@@ -486,7 +823,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: relative;
   background: #fff;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   width: 100%;
   text-align: left;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -503,7 +840,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .modal-window p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .stats-row {
@@ -648,7 +985,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         <img src="img/20.png" alt="+">
       </div>
       <img src="img/12.png" alt="" class="card-img_2">
-      <div class="card-text_2">Кассы само-обслуживания</div>
+      <div class="card-text_2">Кассы само-<br>обслуживания</div>
     </div>
 
     <div class="card">
@@ -696,7 +1033,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 </div>
 <div class="modal-overlay">
   <div class="modal-window">
-    <p><b>Смотри, как это работает:</b> <br> вот касса самообслуживания. <br>Поставишь её в зоне оплаты — <br> и покупатели смогут самостоятельно оплачивать свои покупки!</p>
+    <p><b>Смотри, как это работает:</b> <br> вот касса самообслуживания. <br>Поставишь её в зоне оплаты — <br> и покупатели смогут самостоятельно <br>оплачивать свои покупки!</p>
 
 
     <button class="bnt_2" onclick="location.href='game2.html'">Дальше</button>
