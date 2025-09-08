@@ -423,15 +423,25 @@ bottom: 120px;
 @media screen and (max-width: 390px){
       img[data-platform="1"] {
     top: 120px !important;
+      z-index: 999999;
   }
   img[data-platform="2"] {
     top: 260px !important;
+      z-index: 999999;
   }
   img[data-platform="3"] {
     top: 410px !important;
+      z-index: 999999;
   }
   img[data-platform="4"] {
     top: 70px !important;
+      z-index: 999999;
+  }
+  .platform-shadow{
+    z-index: 1;
+  } 
+  .platform{
+    z-index: 2;
   }
   img[src="img/700.png"] {
     top: 180px !important;
@@ -443,15 +453,19 @@ bottom: 120px;
   }
   .platform-text[data-platform="1"] {
     top: 140px !important;
+      z-index: 999999;
   }
   .platform-text[data-platform="2"] {
     top: 260px !important;
+      z-index: 999999;
   }
   .platform-text[data-platform="3"] {
     top: 370px !important;
+      z-index: 999999;
   }
   .platform-text[data-platform="4"] {
     top: 170px !important;
+      z-index: 999999;
   }
   .platform-text[data-platform="5"] {
     top: 270px !important;
@@ -466,7 +480,7 @@ padding: 40px;
         right: 5%;
   }
 .bottom-block{
-bottom: 530px;
+bottom: 240px;
 }
   .card {
     width: calc(21.0% - 6px);
