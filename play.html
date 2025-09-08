@@ -28,6 +28,7 @@
     }
 
     .main {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -88,6 +89,8 @@ bottom: 280px;
 }
     /* Главный белый блок */
     .content {
+      position: absolute;
+      bottom: 0%;
       width: 95%;
       height: 100%;
       background: #fff;
@@ -103,19 +106,19 @@ bottom: 280px;
 /* Тексты */
 .content p {
   color: rgb(77, 77, 77);
-  font-size: 32px;
+  font-size: 48px;
   line-height: 1.5;
 }
 
 .content h3 {
-  font-size: 32px;
+  font-size: 34px;
+  font-weight: 100;
   font-weight: normal;
 }
 
 /* Контейнер с блоками */
 .options {
-  width: 90%;
-  
+  width: 99%;
   border: 3px solid #02923A;
   border-radius: 15px;
   padding: 25px;
@@ -132,15 +135,15 @@ bottom: 280px;
 }
 
 .option img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   flex-shrink: 0; /* Не сжимается */
 }
 
 .option span {
   color: rgb(77, 77, 77);
-  font-size: 22px;
+  font-size: 32px;
   word-break: break-word; /* Не обрезаем текст */
 }
 .stats {
@@ -181,8 +184,7 @@ bottom: 280px;
       text-align: left;
     }
     .next-btn {
-      position: absolute;
-      bottom: 10%;
+
       background: #575756;
       color: #fff;
     }
