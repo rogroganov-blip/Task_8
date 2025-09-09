@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
   <title>Пример сайта</title>
   <style>
@@ -55,15 +56,16 @@
 }
 
 .left-block {
-  width: 80%;
+  width: 1200px; /* фиксированная ширина */
+  height: 1000px; /* фиксированная высота */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
 }
 .main-img {
   width: 100%;
+  height: auto;
   border-radius: 12px;
   z-index: 2;
 }
@@ -75,7 +77,7 @@
   z-index: 1;   /* ниже основного изображения */
 }
 .right-block {
-  width: 40%;
+  width: 400px; /* фиксированная ширина */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,11 +87,10 @@
   gap: 20px;
 }
 .right-block p{
-  font-size: 24px;
+  font-size: 32px;
 }
-.right-block img{
-  width: 45%;
-  height: 30%;
+.right-block h2{
+  font-size: 32px;
 }
 .qr-img {
   width: 150px;
@@ -175,7 +176,12 @@ padding: 5px;
     <!-- Правый блок с текстом, QR и подписью -->
     <div class="right-block">
       <h2>Играй на своем <br> мобильном устройстве!</h2>
-      <img src="img/qt.png" class="qr-img" alt="QR-код">
+<a href="https://future5ka.fut.ru/" target="_blank">
+  <img src="img/qrcode.png" class="qr-img" alt="QR-код">
+</a>
+
+
+
       <p>Просканируй QR-код камерой <br> телефона и начинай игру</p>
     </div>
   </div>
@@ -201,6 +207,7 @@ padding: 5px;
   </div>
 
   <script>
+
 const bnt = document.querySelector(".play-btn")
 bnt.onclick = ()=>{
     window.location.href = "play.html"; 
