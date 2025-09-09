@@ -5,252 +5,188 @@
   <title>Игровая страница</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-            @font-face {
-  font-family: "MyFont";
-  src: url("fonts/5kaSansDesign-Regular.otf") format("woff2"),
-       url("fonts/5kaSansDesign-Black.otf") format("woff");
-}
+    @font-face {
+      font-family: "MyFont";
+      src: url("fonts/5kaSansDesign-Regular.otf") format("woff2"),
+           url("fonts/5kaSansDesign-Black.otf") format("woff");
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-                    overflow-y: hidden; /* запрет вертикального */
-  overflow-x: hidden;
     }
-    body {
-  font-family: "MyFont", sans-serif;
-      height: 100vh;
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* запрещаем вертикальный и горизонтальный скролл */
+      font-family: "MyFont", sans-serif;
       background: #f5f5f5;
       display: flex;
       justify-content: center;
       align-items: center;
-              overflow-y: hidden; /* запрет вертикального */
-  overflow-x: hidden;
     }
 
     .main {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
       width: 100%;
-      padding: 40px 20px;
-    }
-@media screen and (max-height: 730px) {
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.8); /* уменьшаем всю сцену */
-padding: 20px;
-    width: 100%;
-    bottom: 100px;
-  }
-.bottom-block{
-bottom: 190px;
-}
-  .card {
-    width: calc(21.9% - 8px);
-    padding: 6px;
-  }
-
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
-@media screen and (max-height: 620px) {
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.6); /* уменьшаем всю сцену */
-padding: 20px;
-    width: 100%;
-    bottom: 130px;
-  }
-.bottom-block{
-bottom: 280px;
-}
-  .card {
-    width: calc(21.9% - 8px);
-    padding: 6px;
-  }
-
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
-    /* Главный белый блок */
-    .content {
-      position: absolute;
-      bottom: 0%;
-      width: 95%;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+
+    .content {
+      width: 95%;
+      height: 95%;
       background: #fff;
       border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 20px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 40px;
+      justify-content: space-between;
+      gap: 10px;
+      overflow: hidden;
     }
 
-/* Тексты */
-.content p {
-  color: rgb(77, 77, 77);
-  font-size: 38px;
-  line-height: 1.5;
-}
+    .content p {
+      font-size: calc(16px + 1vw); /* масштабируем текст под экран */
+      line-height: 1.2;
+      color: rgb(77, 77, 77);
+    }
 
-.content h3 {
-  font-size: 30px;
-  font-weight: 100;
-  font-weight: normal;
-}
+    .content h3 {
+      font-size: calc(14px + 1vw);
+      font-weight: normal;
+      line-height: 1.2;
+    }
 
-/* Контейнер с блоками */
-.options {
-  width: 99%;
-  border: 3px solid #02923A;
-  border-radius: 15px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: #fff;
-}
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      border: 2px solid #02923A;
+      border-radius: 12px;
+      padding: 10px;
+      background: #fff;
+      flex-grow: 0.1;
+      justify-content: center;
+    }
 
-.option {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
 
-.option img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  flex-shrink: 0; /* Не сжимается */
-}
+    .option img {
+      width: calc(40px + 2vw);
+      height: auto;
+      flex-shrink: 0;
+    }
 
-.option span {
-  color: rgb(77, 77, 77);
-  font-size: 32px;
-  word-break: break-word; /* Не обрезаем текст */
-}
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 60px; /* Отступ между группами */
-  align-items: center;
-  flex-wrap: wrap;
-}
-.stats span{
-  font-size: 30px;
-}
-.stat-group {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Отступ между span и картинками внутри группы */
-}
+    .option span {
+      font-size: calc(12px + 1vw);
+      word-break: break-word;
+    }
 
-.stats img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5px;
+    }
 
+    .stat-group {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
 
-    /* Кнопка */
+    .stats img {
+      width: calc(20px + 1vw);
+      height: auto;
+    }
+
+    .stats span {
+      font-size: calc(12px + 0.8vw);
+    }
+
     button {
-      padding: 20px;
       width: 100%;
-      max-width: 800px;
-      height: 120px;
+      padding: calc(8px + 1vw);
+      font-size: calc(14px + 1vw);
       border: none;
       border-radius: 8px;
-      cursor: pointer;
-      font-size: 34px;
-    }
-    p{
-      text-align: left;
-    }
-    .next-btn {
-
       background: #575756;
       color: #fff;
+      cursor: pointer;
     }
-    strong{
-      font-weight: 100;
+
+    strong {
       color: #02923A;
     }
-    @media screen and (max-width: 375px) {
-.content{
-  height: 90%;
-}
+    @media screen and (max-width: 375px)  {
+          .content p {
+      font-size: calc(14px + 1vw); /* масштабируем текст под экран */
+      line-height: 1.2;
+      color: rgb(77, 77, 77);
+    }
 
-}
+    .content h3 {
+      font-size: calc(12px + 1vw);
+      font-weight: normal;
+      line-height: 1.2;
+    }
+    }
   </style>
 </head>
 <body>
   <div class="main">
     <div class="content">
-      <!-- Два текста -->
       <p>За прохождение игры ты можешь <br> набрать до 100 баллов — это твой  <br><strong> коэффициент эффективности. </strong> <br> Если наберешь больше 60 баллов — станешь участником розыгрыша призов!</p>
       <p>Баллы начисляются за правильно собранную цифровую схему. Каждая установленная тобой технология прокачивает магазин по четырём параметрам:</p>
 
-      <!-- Обводка с 4 блоками -->
       <div class="options">
         <div class="option">
           <img src="img/2.png" alt="Иконка 1">
-          <span><strong>Скорость</strong> — насколько быстро обслуживаются покупатели. </span>
+          <span><strong>Скорость</strong> — насколько быстро обслуживаются покупатели.</span>
         </div>
         <div class="option">
           <img src="img/3.png" alt="Иконка 2">
-          <span><strong>Комфорт</strong> — насколько удобно <br> и приятно находиться в магазине.</span>
+          <span><strong>Комфорт</strong> — насколько удобно и приятно находиться в магазине.</span>
         </div>
         <div class="option">
           <img src="img/4.png" alt="Иконка 3">
-          <span><strong>Лояльность</strong> — насколько охотно клиенты возвращаются снова и снова.  </span>
+          <span><strong>Лояльность</strong> — насколько охотно клиенты возвращаются снова и снова.</span>
         </div>
         <div class="option">
           <img src="img/5.png" alt="Иконка 4">
-          <span><strong>Устойчивость</strong> — насколько <br> решения экологичны и эффективны.</span>
+          <span><strong>Устойчивость</strong> — насколько решения экологичны и эффективны.</span>
         </div>
       </div>
 
-      <!-- Текст после обводки -->
       <h3>В конце игрок получает от одной до трёх звёзд <br>в зависимости от того, насколько эффективную схему он собрал.</h3>
 
-      <!-- Горизонтальный блок -->
-<div class="stats">
-  <div class="stat-group">
-    <span>0-49</span>
-    <img src="img/6.png" alt="иконка">
-  </div>
-  <div class="stat-group">
-    <span>50-69</span>
-    <img src="img/6.png" alt="иконка">
-    <img src="img/6.png" alt="иконка">
-  </div>
-  <div class="stat-group">
-    <span>70-100</span>
-    <img src="img/6.png" alt="иконка">
-    <img src="img/6.png" alt="иконка">
-    <img src="img/6.png" alt="иконка">
-  </div>
-</div>
+      <div class="stats">
+        <div class="stat-group">
+          <span>0-49</span>
+          <img src="img/6.png" alt="иконка">
+        </div>
+        <div class="stat-group">
+          <span>50-69</span>
+          <img src="img/6.png" alt="иконка">
+          <img src="img/6.png" alt="иконка">
+        </div>
+        <div class="stat-group">
+          <span>70-100</span>
+          <img src="img/6.png" alt="иконка">
+          <img src="img/6.png" alt="иконка">
+          <img src="img/6.png" alt="иконка">
+        </div>
+      </div>
 
-      <!-- Кнопка "Дальше" -->
       <button class="next-btn" onclick="location.href='game.html'">Дальше</button>
     </div>
   </div>
