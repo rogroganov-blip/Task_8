@@ -36,6 +36,7 @@ html, body {
     justify-content: space-between; /* Раздвигаем блоки по краям */
     padding: 0 20px; /* Отступы от краев экрана */
     box-sizing: border-box;
+    z-index: 9999;
 }
 
 .container {
@@ -753,7 +754,7 @@ bottom: 280px;
 .g {
     
   border-radius: 15px;
-  width: 80%;
+  width: 75%;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   display: flex;
@@ -767,19 +768,18 @@ bottom: 280px;
   color: #333333;
   padding: 5px 20px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   z-index: 1000;
 }
 #myBtn{
-  padding: 20px 120px;
+  padding: 20px 100px;
   background-color: #474646; /* цвет текста кнопки Сбросить */
   color: #fff;
   border: none;
-  margin-top: 50px;
-  margin-bottom: 20px;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 .model_mini_chanter {
@@ -818,10 +818,10 @@ bottom: 280px;
         <div class="container">
              <div class="left-block">0/100</div> 
              <div class="right-block"> 
-                <div class="item" ><span id="f1">0</span><img src="img/31.png" alt="+"></div> 
-                <div class="item"><span>0</span><img src="img/32.png" alt="+"></div>
-                <div class="item"><span id="f2">0</span><img src="img/33.png" alt="+"></div>
-                <div class="item"><span>0</span><img src="img/34.png" alt="+"></div>
+                <div class="item" ><span id="f1">0</span><img src="img/2.svg" alt="+"></div> 
+                <div class="item"><span>0</span><img src="img/3.svg" alt="+"></div>
+                <div class="item"><span id="f2">0</span><img src="img/4.svg" alt="+"></div>
+                <div class="item"><span>0</span><img src="img/5.svg" alt="+"></div>
             </div>
         </div>
     </div>
@@ -885,7 +885,7 @@ bottom: 280px;
     <div class="menu-left">Технологии:</div>
     <div class="menu-right">
       <span>Стоимость <strong class="text_i">20</strong></span>
-      <img src="img/20.png" alt="+">
+      <img src="img/20.svg" alt="+">
     </div>
   </div>
 
@@ -912,9 +912,9 @@ bottom: 280px;
     <div class="card_2" onclick="rrr()">
       <div class="card-top">
         <span class="text_i">4</span>
-        <img src="img/20.png"  alt="+">
+        <img src="img/20.svg"  alt="+">
       </div>
-      <img src="img/12.png" alt="" class="card-img">
+      <img src="img/12.svg" alt="" class="card-img">
       <div class="card-text">Кассы само-обслуживания</div>
     </div>
 
@@ -985,9 +985,9 @@ bottom: 280px;
 ">
   <div style="
       background-color: #fff;
-      padding: 20px;
+      padding: 10px;
       border-radius: 10px;
-      max-width: 400px;
+      max-width: 300px;
       text-align: center;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   ">
@@ -995,7 +995,7 @@ bottom: 280px;
       После того, как ты воспользуешься технологией, ей нужно восстановиться. Чтобы не терять времени, ты можешь пока использовать другие!
     </p>
     <button style="
-  padding: 20px 130px;
+  padding: 20px 120px;
   background-color: #474646; /* цвет текста кнопки Сбросить */
   color: #fff;
   border: none;
