@@ -1435,13 +1435,13 @@ bottom: 280px;
   }
 // Данные карточек
 const cardsData = [
-  { name: "Робот-пылесос", img: "img/40.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:4,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"В «Пятёрочке» уже работают автономные уборщики. Они двигаются по залу и убираются без участия человека. Это чисто, быстро и эффективно!", metric: 'robot_cleaner' },
-  { name: "Электронные ценники", img: "img/41.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.svg", stats: [{value:3,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:2,img:"img/4.svg"},{value:5,img:"img/5.svg"}], description:"С такими ценниками цена на полке и в кассе совпадают всегда. А ещё это экологичнее — никаких бумаги и пластика!", metric: 'price_tag' },
-  { name: "Кассы самообслуживания", img: "img/42.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.svg", stats: [{value:4,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"Покупатели сами сканируют товары, складывают их в пакет и уходят — это экономит до 30% времени на одну покупку и сокращает очереди.", metric: 'self_service' },
-  { name: "Зона сборки заказов", img: "img/43.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.svg", stats: [{value:3,img:"img/2.svg"},{value:3,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"Пока ты отдыхаешь, магазин уже собирает заказ! Эта станция позволяет выбрать товары на экране, а сотрудники соберут корзину за 7 минут. Быстро, удобно, современно — как в phygital-магазинах будущего.", metric: 'terminal' },
-  { name: "Кофейная лаунж-зона", img: "img/44.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:2,img:"img/2.svg"},{value:2,img:"img/3.svg"},{value:2,img:"img/4.svg"},{value:2,img:"img/5.svg"}], description:"Ты можешь выпить кофе просто так или пока ждёшь, когда соберут твой заказ. Это не просто удобство — это опыт, который остаётся в памяти. А ещё пахнет круассанами.", metric: 'lounge' },
-  { name: "Отдел готовой еды", img: "img/45.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:2,img:"img/2.svg"},{value:2,img:"img/3.svg"},{value:2,img:"img/4.svg"},{value:2,img:"img/5.svg"}], description:"Готовая еда в «Пятёрочке»: вкусно, полезно и не нужно стоять у плиты! Наслаждайся сбалансированными блюдами из свежих продуктов. Каждое из них проходит проверку у экспертов Студии Вкуса, прежде чем оказаться на полке. Гарантия качества и идеального вкуса в каждом кусочке!", metric: 'ready_meals' },
-  { name: "AI-ассистент", img: "img/46.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.svg", stats: [{value:4,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"Пока ты заботишься о комфорте покупателей, новые технологии помогают сотрудникам справиться с рутиной: умный чат-бот на основе нейросети подскажет любой ответ за секунды, а удобное приложение собрало всё нужное для работы в одном месте. И это не всё! Искусственный интеллект учит новичков и помогает расти тем, кто идёт на повышение. Будущее — уже сегодня в «Пятёрочке»!", metric: 'ai' }
+  { name: "Робот-пылесос", img: "img/40.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:5,img:"img/2.svg"},{value:10,img:"img/3.svg"},{value:0,img:"img/4.svg"},{value:0,img:"img/5.svg"}], description:"В «Пятёрочке» уже работают автономные уборщики. Они двигаются по залу и убираются без участия человека. Это чисто, быстро и эффективно!", metric: 'robot_cleaner' },
+  { name: "Электронные ценники", img: "img/41.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.svg", stats: [{value:0,img:"img/2.svg"},{value:8,img:"img/3.svg"},{value:1,img:"img/4.svg"},{value:12,img:"img/5.svg"}], description:"С такими ценниками цена на полке и в кассе совпадают всегда. А ещё это экологичнее — никаких бумаги и пластика!", metric: 'price_tag' },
+  { name: "Кассы самообслуживания", img: "img/42.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.svg", stats: [{value:13,img:"img/2.svg"},{value:0,img:"img/3.svg"},{value:2,img:"img/4.svg"},{value:0,img:"img/5.svg"}], description:"Покупатели сами сканируют товары, складывают их в пакет и уходят — это экономит до 30% времени на одну покупку и сокращает очереди.", metric: 'self_service' },
+  { name: "Зона сборки заказов", img: "img/43.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.svg", stats: [{value:12,img:"img/2.svg"},{value:0,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:0,img:"img/5.svg"}], description:"Пока ты отдыхаешь, магазин уже собирает заказ! Эта станция позволяет выбрать товары на экране, а сотрудники соберут корзину за 7 минут. Быстро, удобно, современно — как в phygital-магазинах будущего.", metric: 'terminal' },
+  { name: "Кофейная лаунж-зона", img: "img/44.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:0,img:"img/2.svg"},{value:7,img:"img/3.svg"},{value:5,img:"img/4.svg"},{value:0,img:"img/5.svg"}], description:"Ты можешь выпить кофе просто так или пока ждёшь, когда соберут твой заказ. Это не просто удобство — это опыт, который остаётся в памяти. А ещё пахнет круассанами.", metric: 'lounge' },
+  { name: "Отдел готовой еды", img: "img/45.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:0,img:"img/2.svg"},{value:0,img:"img/3.svg"},{value:12,img:"img/4.svg"},{value:0,img:"img/5.svg"}], description:"Готовая еда в «Пятёрочке»: вкусно, полезно и не нужно стоять у плиты! Наслаждайся сбалансированными блюдами из свежих продуктов. Каждое из них проходит проверку у экспертов Студии Вкуса, прежде чем оказаться на полке. Гарантия качества и идеального вкуса в каждом кусочке!", metric: 'ready_meals' },
+  { name: "AI-ассистент", img: "img/46.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.svg", stats: [{value:8,img:"img/2.svg"},{value:0,img:"img/3.svg"},{value:8,img:"img/4.svg"},{value:3,img:"img/5.svg"}], description:"Пока ты заботишься о комфорте покупателей, новые технологии помогают сотрудникам справиться с рутиной: умный чат-бот на основе нейросети подскажет любой ответ за секунды, а удобное приложение собрало всё нужное для работы в одном месте. И это не всё! Искусственный интеллект учит новичков и помогает расти тем, кто идёт на повышение. Будущее — уже сегодня в «Пятёрочке»!", metric: 'ai' }
 ];
 
 // Данные платформ
@@ -1811,22 +1811,27 @@ document.querySelectorAll(".platform-image").forEach(platformImg => {
     usedCards.add(cardToPlace.name);
     cardToPlace = null;
 
-    const totalCoeff = totalStats.reduce((a, b) => a + b, 0);
-    if (totalCoeff >= 60) {
-      const modal = document.getElementById("TTT");
-      modal.style.display = "flex";
-      const leftBlockText = document.querySelector(".left-block").textContent;
-      const score = leftBlockText.split("/")[0];
-      const gggText = document.querySelector(".ggg-text");
-      gggText.innerHTML = `
-        Ты набрал <b>${score}</b> баллов и теперь <br>
-        участвуешь в розыгрыше призов!<br>
-        Оставляй свою почту ниже <br>и жди результатов :
-      `;
-      modal.querySelector(".ttt-close").onclick = () => {
-        window.location.href = "game5.html";
-      };
-    }
+const totalCoeff = totalStats.reduce((a, b) => a + b, 0);
+console.log(totalCoeff);
+
+if (totalCoeff >= 60) {
+  const modal = document.getElementById("TTT");
+  modal.style.display = "flex";
+  const leftBlockText = document.querySelector(".left-block").textContent;
+  const score = leftBlockText.split("/")[0];
+  const gggText = document.querySelector(".ggg-text");
+  gggText.innerHTML = `
+    Ты набрал <b>${score}</b> баллов и теперь <br>
+    участвуешь в розыгрыше призов!<br>
+    Оставляй свою почту ниже <br>и жди результатов :
+  `;
+
+  modal.querySelector(".ttt-close").onclick = () => {
+    // сохраняем результат
+    localStorage.setItem("finalScore", totalCoeff);
+    window.location.href = "game5.html";
+  };
+}
 
     updateCost();
     updateStatsDisplay();
