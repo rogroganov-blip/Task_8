@@ -247,7 +247,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 .card-text {
   margin-top: 5px;
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
 }
 .text_i{
     color: #02923A;
@@ -891,16 +891,21 @@ bottom: 280px;
 
 /* Текст */
 .ttt-text {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.6;
-  margin-bottom: 20px;
   font-weight: bold;
   text-align: left;
 }
 .ttt-text_2 {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.6;
-  margin-bottom: 60px;
+  color: #9c9c9c;
+  font-weight: bold;
+    text-align: left;
+}
+.ttt-text_3 {
+  font-size: 15px;
+  line-height: 1.6;
   color: #9c9c9c;
   font-weight: bold;
     text-align: left;
@@ -908,7 +913,7 @@ bottom: 280px;
 
 /* Кнопка */
 .ttt-close {
-  padding: 20px 50px;
+  padding: 20px 120px;
   background-color: #474646; /* цвет текста кнопки Сбросить */
   color: #fff;
   border: none;
@@ -1085,30 +1090,38 @@ bottom: 280px;
 }
 .modal-content.FGH_2 {
   background: white;
-  padding: 20px 30px;
+  padding: 10px 50px;
   border-radius: 12px;
-  max-width: 400px;
+  max-width: 350px;
   width: 100%;
   height: 200px;
   text-align: center;
 }
 
 .modal-content.FGH p {
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 0px;
+  padding: 0;
+  font-size: 16px;
 }
-
+.errorText{
+  
+}
 .modal-content.FGH button {
-  padding: 20px 20px;
+  padding: 20px 15px;
   background-color: #474646; /* цвет текста кнопки Сбросить */
   color: #fff;
   border: none;
+  margin-bottom: 40px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
 }
+#retryBtn{
+  width: 90%;
+  margin-top: 20px;
+}
 #errorOkBtn{
-    padding: 20px 140px;
+    padding: 20px 120px;
   background-color: #474646; /* цвет текста кнопки Сбросить */
   color: #fff;
   border: none;
@@ -1132,7 +1145,9 @@ bottom: 280px;
 .closeBtn:hover {
   color: #ff0000;
 }
-
+.retry{
+  color: #02923A;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -1144,10 +1159,10 @@ bottom: 280px;
         <div class="container">
              <div class="left-block">0/100</div> 
              <div class="right-block"> 
-                <div class="item"><span>0</span><img src="img/31.png" alt="+"></div> 
-                <div class="item"><span>0</span><img src="img/32.png" alt="+"></div>
-                <div class="item"><span>0</span><img src="img/33.png" alt="+"></div>
-                <div class="item"><span>0</span><img src="img/34.png" alt="+"></div>
+                <div class="item"><span>0</span><img src="img/2.svg" alt="+"></div> 
+                <div class="item"><span>0</span><img src="img/3.svg" alt="+"></div>
+                <div class="item"><span>0</span><img src="img/4.svg" alt="+"></div>
+                <div class="item"><span>0</span><img src="img/5.svg" alt="+"></div>
             </div>
         </div>
     </div>
@@ -1216,7 +1231,7 @@ bottom: 280px;
     <div class="menu-left">Технологии:</div>
     <div class="menu-right">
       <span>Осталось <strong class="text_i">12</strong></span>
-      <img src="img/20.png" alt="+">
+      <img src="img/20.svg" alt="+">
     </div>
   </div>
 
@@ -1225,63 +1240,63 @@ bottom: 280px;
     <div class="card">
       <div class="card-top">
         <span class="text_i">2</span>
-        <img src="img/20.png" alt="+">
+        <img src="img/20.svg" alt="+">
       </div>
-      <img src="img/10.png" alt="" class="card-img">
+      <img src="img/10.svg" alt="" class="card-img">
       <div class="card-text">Робот-пылесос</div>
     </div>
 
     <div class="card">
       <div class="card-top">
         <span class="text_i">3</span>
-        <img src="img/20.png" alt="+">
+        <img src="img/20.svg" alt="+">
       </div>
-      <img src="img/11.png" alt="" class="card-img">
+      <img src="img/11.svg" alt="" class="card-img">
       <div class="card-text">Электронные ценники</div>
     </div>
 
     <div class="card">
       <div class="card-top">
         <span class="text_i">4</span>
-        <img src="img/20.png" alt="+">
+        <img src="img/20.svg" alt="+">
       </div>
-      <img src="img/12.png" alt="" class="card-img">
+      <img src="img/12.svg" alt="" class="card-img">
       <div class="card-text">Кассы само-обслуживания</div>
     </div>
 
     <div class="card">
       <div class="card-top">
         <span class="text_i">3</span>
-        <img src="img/20.png" alt="+">
+        <img src="img/20.svg" alt="+">
       </div>
-      <img src="img/13.png" alt="" class="card-img">
+      <img src="img/13.svg" alt="" class="card-img">
       <div class="card-text">Зона сборки заказов</div>
     </div>
 
     <div class="card">
       <div class="card-top">
         <span class="text_i">2</span>
-        <img src="img/20.png" alt="+">
+        <img src="img/20.svg" alt="+">
       </div>
-      <img src="img/14.png" alt="" class="card-img">
+      <img src="img/14.svg" alt="" class="card-img">
       <div class="card-text">Кофейная лаунж-зона</div>
     </div>
 
     <div class="card">
       <div class="card-top">
         <span class="text_i">2</span>
-        <img src="img/20.png" alt="+">
+        <img src="img/20.svg" alt="+">
       </div>
-      <img src="img/15.png" alt="" class="card-img">
+      <img src="img/15.svg" alt="" class="card-img">
       <div class="card-text">Отдел готовой еды</div>
     </div>
 
     <div class="card">
       <div class="card-top">
         <span class="text_i">4</span>
-        <img src="img/20.png" alt="+">
+        <img src="img/20.svg" alt="+">
       </div>
-      <img src="img/16.png" alt="" class="card-img">
+      <img src="img/16.svg" alt="" class="card-img">
       <div class="card-text">AI-ассистент</div>
     </div>
   </div>
@@ -1302,7 +1317,7 @@ bottom: 280px;
     <div class="modal-info">
       <div class="modal-left">
         <span id="modal-cost">Осталось: 0</span>
-        <img id="modal-cost-img" src="img/20.png" alt="+">
+        <img id="modal-cost-img" src="img/20.svg" alt="+">
       </div>
       <div class="modal-right" id="modal-right"></div>
     </div>
@@ -1330,7 +1345,7 @@ bottom: 280px;
 
 <div id="errorModal" class="modal FGH_2" style="display:none;">
   <div class="modal-content FGH_2">
-    <p id="errorText">К сожалению, эту технологию нельзя использовать здесь. <br><br> Попробуй что-нибудь другое</p>
+    <p id="errorText">К сожалению, эту технологию нельзя использовать здесь. <br><br> <b>Попробуй что-нибудь другое</b></p>
         <button id="errorOkBtn">Понятно</button>
 
   </div>
@@ -1342,7 +1357,8 @@ bottom: 280px;
 <div class="TTT" id="TTT" style="display: none;">
   <div class="ttt-content">
     <p class="ttt-text"><strong class="i">Поздравляем!</strong> Ты грамотно распределил все ресурсы и сделал магазин по-настоящему технологичным.</p>
-     <p class="ttt-text_2">Кстати, технологии в игре — не фантазия, а реальные решения «Пятёрочки». В магазинах уже внедрены <b class="s">электронные ценники, кассы самообслуживания </b>(которые обрабатывают до 85% покупок), AI-ассистенты для составления графиков сотрудников и даже роботы на складах. А в первом <b class="s">phygital-супермаркете</b> в Москве появился новый формат: покупатель может оформить заказ через терминал, а пока сотрудники собирают корзину — спокойно отдохнуть в уютной лаундж-зоне с кофе. Всё удобно, быстро и технологично.</p>
+     <p class="ttt-text_2">Кстати, технологии в игре — <br>не фантазия, а реальные решения <br> «Пятёрочки». В магазинах уже внедрены <br> <b class="s">электронные ценники, кассы самообслуживания </b>(которые <br> обрабатывают до 85% покупок), <br> AI-ассистенты для составления графиков  <br>сотрудников и даже роботы на складах.</p>
+     <p class="ttt-text_3">А в первом <b class="s">phygital-супермаркете<br></b> в Москве появился новый формат: <br> покупатель может оформить заказ через <br> терминал, а пока сотрудники собирают <br> корзину — спокойно отдохнуть в уютной <br> лаундж-зоне с кофе. Всё удобно, быстро <br> и технологично.</p>
 <button class="ttt-close" onclick="ym(103834904, 'reachGoal', 'again'); Q()">Далее</button>
   </div>
 </div>
@@ -1395,7 +1411,7 @@ bottom: 280px;
 <div id="myModal" class="modal FGH">
   <div class="modal-content FGH">
         <span class="closeBtn_2">&times;</span>
-    <p>Ты почти собрал идеальную схему, но немного не хватило баллов. Попробуй ещё раз — всё получится!</p>
+    <p>Ты почти собрал идеальную схему, <br> но немного не хватило баллов. <strong class="retry">Попробуй ещё раз</strong> — всё  <br> получится!</p>
 <button id="retryBtn" onclick="ym(103834904, 'reachGoal', 'again')">Попробовать ещё раз</button>
   </div>
 </div>
@@ -1419,13 +1435,13 @@ bottom: 280px;
   }
 // Данные карточек
 const cardsData = [
-  { name: "Робот-пылесос", img: "img/40.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.png", stats: [{value:4,img:"img/31.png"},{value:4,img:"img/32.png"},{value:4,img:"img/33.png"},{value:4,img:"img/34.png"}], description:"В «Пятёрочке» уже работают автономные уборщики. Они двигаются по залу и убираются без участия человека. Это чисто, быстро и эффективно!", metric: 'robot_cleaner' },
-  { name: "Электронные ценники", img: "img/41.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.png", stats: [{value:3,img:"img/31.png"},{value:4,img:"img/32.png"},{value:2,img:"img/33.png"},{value:5,img:"img/34.png"}], description:"С такими ценниками цена на полке и в кассе совпадают всегда. А ещё это экологичнее — никаких бумаги и пластика!", metric: 'price_tag' },
-  { name: "Кассы само-обслуживания", img: "img/42.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.png", stats: [{value:4,img:"img/31.png"},{value:4,img:"img/32.png"},{value:4,img:"img/33.png"},{value:4,img:"img/34.png"}], description:"Покупатели сами сканируют товары, складывают их в пакет и уходят — это экономит до 30% времени на одну покупку и сокращает очереди.", metric: 'self_service' },
-  { name: "Зона сборки заказов", img: "img/43.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.png", stats: [{value:3,img:"img/31.png"},{value:3,img:"img/32.png"},{value:4,img:"img/33.png"},{value:4,img:"img/34.png"}], description:"Пока ты отдыхаешь, магазин уже собирает заказ! Эта станция позволяет выбрать товары на экране, а сотрудники соберут корзину за 7 минут. Быстро, удобно, современно — как в phygital-магазинах будущего.", metric: 'terminal' },
-  { name: "Кофейная лаунж-зона", img: "img/44.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.png", stats: [{value:2,img:"img/31.png"},{value:2,img:"img/32.png"},{value:2,img:"img/33.png"},{value:2,img:"img/34.png"}], description:"Ты можешь выпить кофе просто так или пока ждёшь, когда соберут твой заказ. Это не просто удобство — это опыт, который остаётся в памяти. А ещё пахнет круассанами.", metric: 'lounge' },
-  { name: "Отдел готовой еды", img: "img/45.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.png", stats: [{value:2,img:"img/31.png"},{value:2,img:"img/32.png"},{value:2,img:"img/33.png"},{value:2,img:"img/34.png"}], description:"Готовая еда в «Пятёрочке»: вкусно, полезно и не нужно стоять у плиты! Наслаждайся сбалансированными блюдами из свежих продуктов. Каждое из них проходит проверку у экспертов Студии Вкуса, прежде чем оказаться на полке. Гарантия качества и идеального вкуса в каждом кусочке!", metric: 'ready_meals' },
-  { name: "AI-ассистент", img: "img/46.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.png", stats: [{value:4,img:"img/31.png"},{value:4,img:"img/32.png"},{value:4,img:"img/33.png"},{value:4,img:"img/34.png"}], description:"Пока ты заботишься о комфорте покупателей, новые технологии помогают сотрудникам справиться с рутиной: умный чат-бот на основе нейросети подскажет любой ответ за секунды, а удобное приложение собрало всё нужное для работы в одном месте. И это не всё! Искусственный интеллект учит новичков и помогает расти тем, кто идёт на повышение. Будущее — уже сегодня в «Пятёрочке»!", metric: 'ai' }
+  { name: "Робот-пылесос", img: "img/40.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:4,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"В «Пятёрочке» уже работают автономные уборщики. Они двигаются по залу и убираются без участия человека. Это чисто, быстро и эффективно!", metric: 'robot_cleaner' },
+  { name: "Электронные ценники", img: "img/41.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.svg", stats: [{value:3,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:2,img:"img/4.svg"},{value:5,img:"img/5.svg"}], description:"С такими ценниками цена на полке и в кассе совпадают всегда. А ещё это экологичнее — никаких бумаги и пластика!", metric: 'price_tag' },
+  { name: "Кассы самообслуживания", img: "img/42.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.svg", stats: [{value:4,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"Покупатели сами сканируют товары, складывают их в пакет и уходят — это экономит до 30% времени на одну покупку и сокращает очереди.", metric: 'self_service' },
+  { name: "Зона сборки заказов", img: "img/43.png", extraImg: "img/robot-extra.png", cost: 3, costImg: "img/20.svg", stats: [{value:3,img:"img/2.svg"},{value:3,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"Пока ты отдыхаешь, магазин уже собирает заказ! Эта станция позволяет выбрать товары на экране, а сотрудники соберут корзину за 7 минут. Быстро, удобно, современно — как в phygital-магазинах будущего.", metric: 'terminal' },
+  { name: "Кофейная лаунж-зона", img: "img/44.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:2,img:"img/2.svg"},{value:2,img:"img/3.svg"},{value:2,img:"img/4.svg"},{value:2,img:"img/5.svg"}], description:"Ты можешь выпить кофе просто так или пока ждёшь, когда соберут твой заказ. Это не просто удобство — это опыт, который остаётся в памяти. А ещё пахнет круассанами.", metric: 'lounge' },
+  { name: "Отдел готовой еды", img: "img/45.png", extraImg: "img/robot-extra.png", cost: 2, costImg: "img/20.svg", stats: [{value:2,img:"img/2.svg"},{value:2,img:"img/3.svg"},{value:2,img:"img/4.svg"},{value:2,img:"img/5.svg"}], description:"Готовая еда в «Пятёрочке»: вкусно, полезно и не нужно стоять у плиты! Наслаждайся сбалансированными блюдами из свежих продуктов. Каждое из них проходит проверку у экспертов Студии Вкуса, прежде чем оказаться на полке. Гарантия качества и идеального вкуса в каждом кусочке!", metric: 'ready_meals' },
+  { name: "AI-ассистент", img: "img/46.png", extraImg: "img/robot-extra.png", cost: 4, costImg: "img/20.svg", stats: [{value:4,img:"img/2.svg"},{value:4,img:"img/3.svg"},{value:4,img:"img/4.svg"},{value:4,img:"img/5.svg"}], description:"Пока ты заботишься о комфорте покупателей, новые технологии помогают сотрудникам справиться с рутиной: умный чат-бот на основе нейросети подскажет любой ответ за секунды, а удобное приложение собрало всё нужное для работы в одном месте. И это не всё! Искусственный интеллект учит новичков и помогает расти тем, кто идёт на повышение. Будущее — уже сегодня в «Пятёрочке»!", metric: 'ai' }
 ];
 
 // Данные платформ
@@ -1539,6 +1555,7 @@ document.querySelectorAll(".card").forEach((card, index) => {
       // ✅ Открываем модалку
       selectedCard = cardsData[index];
       modalName.textContent = selectedCard.name;
+      modalName.style.fontSize = "18px"
       modalImg.src = selectedCard.img;
       modalCost.textContent = `Осталось: ${selectedCard.cost}`;
       modalCostImg.src = selectedCard.costImg;
