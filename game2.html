@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Все платформы с настраиваемыми изображениями</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   @font-face {
   font-family: "MyFont";
@@ -262,6 +263,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media screen and (max-width: 393px)  {
+  
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.8); /* уменьшаем всю сцену */
@@ -287,6 +289,7 @@ bottom: 160px;
 
 }
 @media screen and (max-width: 430px)  {
+  
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.8); /* уменьшаем всю сцену */
@@ -312,6 +315,39 @@ bottom: 190px;
 
 }
 @media screen and (max-width: 450px)  {
+        img[data-platform="1"] {
+    top: 120px !important;
+  }
+  img[data-platform="2"] {
+    top: 250px !important;
+  }
+  img[data-platform="3"] {
+    top: 400px !important;
+  }
+  img[data-platform="4"] {
+    top: 70px !important;
+  }
+  img[src="img/700.png"] {
+    top: 180px !important;
+  }
+  img[src="img/600.png"] {
+    top: 290px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 260px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 370px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 170px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 270px !important;
+  }
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.8); /* уменьшаем всю сцену */
@@ -337,6 +373,7 @@ bottom: 220px;
 
 }
 @media screen and (max-width: 414px) {
+  
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.8); /* уменьшаем всю сцену */
@@ -468,7 +505,7 @@ padding: 40px;
 bottom: 180px;
 }
   .card {
-    width: calc(21.0% - 6px);
+    width: calc(20.7% - 6px);
     padding: 6px;
   }
 
