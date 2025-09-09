@@ -783,7 +783,9 @@ bottom: 280px;
 .text_error{
     color: red;
 }
-
+.faf{
+  color: #02923A;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -946,10 +948,7 @@ bottom: 280px;
     </div>
 
     <!-- Текст -->
-    <p class="ggg-text">
-      Ты набрал баллов и теперь <br> участвуешь в розыгрыше призов!<br>
-      Оставляй свою почту ниже <br>и жди результатов :
-    </p>
+<p class="ggg-text"></p>
 
     <!-- Инпуты -->
     <div class="ggg-form">
@@ -980,7 +979,14 @@ bottom: 280px;
     </div>
   </div>
 </div>
+
 <script type="module">
+    const finalScore = localStorage.getItem("finalScore") || 0;
+  document.querySelector(".ggg-text").innerHTML = `
+    Ты набрал <b class="faf">${finalScore}</b> баллов и теперь <br>
+    участвуешь в розыгрыше призов!<br>
+    Оставляй свою почту ниже<br>и жди результатов :
+  `;
 import { FTClient } from "https://esm.sh/ft-client"
 
 // Инициализация клиента
