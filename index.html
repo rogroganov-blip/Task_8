@@ -199,15 +199,21 @@ padding: 5px;
         <p>Внедри их в разные зоны и создай <br> суперэффективную схему магазина. <br> Чем круче решения, <br> тем выше твой шанс участвовать <br> в розыгрыше призов!</p>
         <button class="play-btn">Играть</button>
       </div>
-      <div class="mini-block" id="cookie-block">
-        <p>Пользуясь нашим сайтом, ты соглашаешься <br> с тем, что <strong class="g">мы используем cookies</strong></p>
-        <button class="ok-btn" onclick="acceptCookies()">Окей</button>
-      </div>
+<div class="mini-block" id="cookie-block">
+  <p>Пользуясь нашим сайтом, ты соглашаешься <br> 
+    с тем, что <strong class="g">мы используем cookies</strong>
+  </p>
+  <button class="ok-btn" onclick="acceptCookies()">
+    Окей
+  </button>
+</div>
     </div>
   </div>
 
   <script>
-
+  function acceptCookies() {
+    window.location.href = "https://fut.ru/cookie";
+  }
 const bnt = document.querySelector(".play-btn")
 bnt.onclick = ()=>{
     window.location.href = "play.html"; 
