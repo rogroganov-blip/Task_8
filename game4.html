@@ -259,31 +259,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 
 
-@media screen and (max-width: 393px)  {
-  .middle-block {
-    aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
-    transform: scale(0.8); /* уменьшаем всю сцену */
-padding: 30px;
-    width: 100%;
-        bottom: 100px;
-  }
-.bottom-block{
-bottom: 160px;
-}
-  .card {
-    width: calc(20.9% - 8px);
-    padding: 6px;
-  }
 
-  .card-img {
-    width: 28px;
-  }
-
-  .cards-buttons {
-    margin-top: 20px;
-  }
-
-}
 @media screen and (max-width: 430px)  {
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
@@ -310,6 +286,39 @@ bottom: 190px;
 
 }
 @media screen and (max-width: 450px)  {
+        img[data-platform="1"] {
+    top: 120px !important;
+  }
+  img[data-platform="2"] {
+    top: 250px !important;
+  }
+  img[data-platform="3"] {
+    top: 400px !important;
+  }
+  img[data-platform="4"] {
+    top: 70px !important;
+  }
+  img[src="img/700.png"] {
+    top: 180px !important;
+  }
+  img[src="img/600.png"] {
+    top: 290px !important;
+  }
+  .platform-text[data-platform="1"] {
+    top: 140px !important;
+  }
+  .platform-text[data-platform="2"] {
+    top: 260px !important;
+  }
+  .platform-text[data-platform="3"] {
+    top: 370px !important;
+  }
+  .platform-text[data-platform="4"] {
+    top: 170px !important;
+  }
+  .platform-text[data-platform="5"] {
+    top: 270px !important;
+  }
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
     transform: scale(0.8); /* уменьшаем всю сцену */
@@ -438,38 +447,36 @@ bottom: 120px;
       z-index: 999999;
   }
   .platform-shadow{
-    z-index: 1;
+    z-index: -1;
   } 
   .platform{
-    z-index: 2;
+    z-index: 1;
   }
   img[src="img/700.png"] {
     top: 180px !important;
-        z-index: 999999;
   }
   img[src="img/600.png"] {
     top: 290px !important;
-    z-index: 999999;
   }
   .platform-text[data-platform="1"] {
     top: 140px !important;
-      z-index: 999999;
+          z-index: 999999;
   }
   .platform-text[data-platform="2"] {
     top: 260px !important;
-      z-index: 999999;
+          z-index: 999999;
   }
   .platform-text[data-platform="3"] {
     top: 370px !important;
-      z-index: 999999;
+          z-index: 999999;
   }
   .platform-text[data-platform="4"] {
     top: 170px !important;
-      z-index: 999999;
+          z-index: 999999;
   }
   .platform-text[data-platform="5"] {
     top: 270px !important;
-        z-index: 999999;
+          z-index: 999999;
   }
   .middle-block {
     aspect-ratio: 3.8 / 4; /* сделаем более квадратной, чтобы влезло */
