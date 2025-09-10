@@ -1034,8 +1034,34 @@ submitBtn.addEventListener('click', async () => {
   const email = emailInput.value.trim()
 
   // Проверка пустых полей
-  if (!name || !phone || !email) {
+  if (!name && !phone && !email) {
     textError.innerHTML = "Заполните все поля (Имя, Телефон, Почта)."
+    return
+  }
+    // Проверка пустых полей
+  if (!name && !phone) {
+    textError.innerHTML = "Заполните поля (Имя, Телефон)."
+    return
+  }
+    if (!name && !email) {
+    textError.innerHTML = "Заполните поля (Телефон, Почта)."
+    return
+  }
+      if (!phone && !email) {
+    textError.innerHTML = "Заполните поля (Телефон, Почта)."
+    return
+  }
+    // Проверка пустых полей
+  if (!name) {
+    textError.innerHTML = "Заполните поля (Имя)."
+    return
+  }
+    if (!phone) {
+    textError.innerHTML = "Заполните поля (Телефон)."
+    return
+  }
+      if (!email) {
+    textError.innerHTML = "Заполните поля (Почта)."
     return
   }
 
