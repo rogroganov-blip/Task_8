@@ -672,10 +672,17 @@ bottom: 280px;
 
 .close {
   position: absolute;
-  right: 15px;
-  top: -30px;
+  right: 0%;
+  top: -50px;
+  background-color: white;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
   color: #aaa;
   font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   cursor: pointer;
 }
@@ -716,7 +723,7 @@ bottom: 280px;
 .modal-description {
   margin-bottom: 15px;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   overflow-y: auto;
   flex: 1;
   width: 100%;
@@ -1487,9 +1494,38 @@ retryBtn.onclick = ()=>{
         window.location.href = "game4.html"; // замените на свой URL
 }
 modal.style.display = "none";
+
+
 Btn.onclick = ()=>{
   modal_2.style.display = "flex"; // flex, чтобы центрировать
+const totalCoeff = totalStats.reduce((a, b) => a + b, 0);
+console.log(totalCoeff);
+
+if (totalCoeff >= 60) {
+  const modal = document.getElementById("TTT");
+  modal.style.display = "flex";
+  const leftBlockText = document.querySelector(".left-block").textContent;
+  const score = leftBlockText.split("/")[0];
+  const gggText = document.querySelector(".ggg-text");
+  gggText.innerHTML = `
+    Ты набрал <b>${score}</b> баллов и теперь <br>
+    участвуешь в розыгрыше призов!<br>
+    Оставляй свою почту ниже <br>и жди результатов :
+  `;
+
+  modal.querySelector(".ttt-close").onclick = () => {
+    // сохраняем результат
+    localStorage.setItem("finalScore", totalCoeff);
+    window.location.href = "game5.html";
+  };
 }
+else{
+    modal_2.style.display = "flex"; // flex, чтобы центрировать
+}
+
+}
+
+
 closeBtn_2.addEventListener("click", hideModal);
 function hideModal() {
   modal_2.style.display = "none";
@@ -1557,7 +1593,7 @@ document.querySelectorAll(".card").forEach((card, index) => {
       modalName.textContent = selectedCard.name;
       modalName.style.fontSize = "18px"
       modalImg.src = selectedCard.img;
-      modalCost.textContent = `Осталось: ${selectedCard.cost}`;
+      modalCost.textContent = `Стоимость: ${selectedCard.cost}`;
       modalCostImg.src = selectedCard.costImg;
       modalRight.innerHTML = "";
 
@@ -1573,7 +1609,6 @@ document.querySelectorAll(".card").forEach((card, index) => {
         modalRight.appendChild(span);
         modalRight.appendChild(img);
       });
-
       modalDescription.textContent = selectedCard.description;
       modal.style.display = "flex";
 
@@ -1798,6 +1833,7 @@ document.querySelectorAll(".platform-image").forEach(platformImg => {
       const currentCard = allCards[cardIndex2];
       currentCard.classList.add("highlight");
       currentCard.classList.remove("gray");
+
       setTimeout(() => {
         currentCard.classList.remove("highlight");
       }, 10000);
@@ -1806,27 +1842,6 @@ document.querySelectorAll(".platform-image").forEach(platformImg => {
     usedCards.add(cardToPlace.name);
     cardToPlace = null;
 
-const totalCoeff = totalStats.reduce((a, b) => a + b, 0);
-console.log(totalCoeff);
-
-if (totalCoeff >= 60) {
-  const modal = document.getElementById("TTT");
-  modal.style.display = "flex";
-  const leftBlockText = document.querySelector(".left-block").textContent;
-  const score = leftBlockText.split("/")[0];
-  const gggText = document.querySelector(".ggg-text");
-  gggText.innerHTML = `
-    Ты набрал <b>${score}</b> баллов и теперь <br>
-    участвуешь в розыгрыше призов!<br>
-    Оставляй свою почту ниже <br>и жди результатов :
-  `;
-
-  modal.querySelector(".ttt-close").onclick = () => {
-    // сохраняем результат
-    localStorage.setItem("finalScore", totalCoeff);
-    window.location.href = "game5.html";
-  };
-}
 
     updateCost();
     updateStatsDisplay();
