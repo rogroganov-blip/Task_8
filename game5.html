@@ -935,9 +935,15 @@ bottom: 280px;
 <div class="YYY" style="display: none;">
   <div class="yyy-content">
     <p class="yyy-text">Хочешь стать частью <br> технологической команды <br> «Пятёрочки»?  <br><strong class="n"> Переходи на сайт и оставляй заявку.</strong></p>
-    <button class="yyy-btn">Стажировка в Пятёрочке</button>
-    <button class="yyy-btn">Практика в Пятёрочке</button>
-    <button class="yyy-btn">Работа в Пятёрочке</button>
+<a href="https://fut.ru/s/5ka1" target="_blank">
+  <button class="yyy-btn">Стажировка в Пятёрочке</button>
+</a>
+<a href="https://fut.ru/s/5ka2" target="_blank">
+  <button class="yyy-btn">Практика в Пятёрочке</button>
+</a>
+<a href="https://fut.ru/s/5ka3" target="_blank">
+  <button class="yyy-btn">Работа в Пятёрочке</button>
+</a>
   </div>
 </div>
 
@@ -971,7 +977,7 @@ bottom: 280px;
     <!-- Чекбоксы -->
     <div class="ggg-checkboxes">
       <label>
-        <input type="checkbox"> Я даю согласие на <strong class="l"><a href="https://fut.ru/personal_data_agreement">обработку</a></strong> и <strong class="l"><a href="https://fut.ru/personal_data_transfer_agreement">передачу</a></strong> моих персональных данных и соглашаюсь с условиями <strong class="l"> Пользовательского соглашения,</strong> <strong class="l"> <a href="https://fut.ru/personal-data">Политикой обработки персональных данных</a>,</strong> а также с <strong class="l"><a href="https://fut.ru/personal-data">правилами проведения акции.</a></strong>
+        <input type="checkbox"> Я даю согласие на <strong class="l"><a href="https://fut.ru/personal_data_agreement">обработку</a></strong> и <strong class="l"><a href="https://fut.ru/personal_data_transfer_agreement">передачу</a></strong> моих персональных данных и соглашаюсь с<strong class="l"> <a href="https://fut.ru/personal-data">Политикой обработки персональных данных</a>,</strong> а также с <strong class="l"><a href="https://fut.ru/personal-data">правилами проведения акции.</a></strong>
       </label>
       <label>
         <input type="checkbox"> <strong class="l"><a href="https://fut.ru/adv_messages_agreement">Хочу ловить персональные стажировки от топ-компаний в рекламной рассылке</a></strong>
@@ -1010,7 +1016,9 @@ const textError = document.querySelector('.text_error')
 const text_button = document.querySelector(".ggg-btn");
 const errorModal = document.querySelector(".YYY");
 const div = document.querySelector(".GGG");
-
+consentCheckbox.checked = false;
+subscribeTopCheck.checked = false;
+subscribeX5Check.checked = false;
 // === Автоподстановка +7 при клике ===
 phoneInput.addEventListener("focus", () => {
   if (!phoneInput.value.startsWith("+7")) {
