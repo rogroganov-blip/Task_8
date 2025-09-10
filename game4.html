@@ -1798,11 +1798,6 @@ document.querySelectorAll(".platform-image").forEach(platformImg => {
       const currentCard = allCards[cardIndex2];
       currentCard.classList.add("highlight");
       currentCard.classList.remove("gray");
-  const grayCard = document.querySelector(".cards-container .card.gray");
-  console.log(grayCard)
-  if (grayCard) {
-    grayCard.classList.remove("gray");
-  }
       setTimeout(() => {
         currentCard.classList.remove("highlight");
       }, 10000);
