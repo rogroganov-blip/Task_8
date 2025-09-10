@@ -1497,7 +1497,7 @@ modal.style.display = "none";
 
 
 Btn.onclick = ()=>{
-  modal_2.style.display = "flex"; // flex, чтобы центрировать
+
 const totalCoeff = totalStats.reduce((a, b) => a + b, 0);
 console.log(totalCoeff);
 
@@ -1522,16 +1522,6 @@ if (totalCoeff >= 60) {
 else{
     modal_2.style.display = "flex"; // flex, чтобы центрировать
 }
-
-}
-
-
-closeBtn_2.addEventListener("click", hideModal);
-function hideModal() {
-  modal_2.style.display = "none";
-}
-// Обновление стоимости
-function updateCost() {
   document.querySelector(".menu-right .text_i").textContent = totalCost;
     console.log(totalCost)
 if (totalCost <=0) {
@@ -1554,6 +1544,17 @@ if (totalCost <=0) {
   };
 }
 
+}
+
+
+closeBtn_2.addEventListener("click", hideModal);
+function hideModal() {
+  modal_2.style.display = "none";
+}
+// Обновление стоимости
+function updateCost() {
+  document.querySelector(".menu-right .text_i").textContent = totalCost;
+    console.log(totalCost)
 }
 
 // Обновление характеристик
