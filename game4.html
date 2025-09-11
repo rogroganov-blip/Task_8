@@ -822,15 +822,14 @@ bottom: 280px;
 }
 
 /* Кнопки */
-.mmm-close,
 .mmm-close_2 {
-  flex: 1; /* кнопки одинаковой ширины */
-  padding: 12px 0;
-  font-size: 16px;
+  padding: 20px 80px;
+  background-color: #474646; /* цвет текста кнопки Сбросить */
+  color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-size: 16px;
 }
 
 /* Стили отдельных кнопок */
@@ -842,17 +841,6 @@ bottom: 280px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-}
-
-
-.mmm-close_2 {
-    border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-    padding: 20px 50px;
-  background-color: #D9D9D9;
-  color: #474646;
-  border: 1px solid #474646;
 }
 
 
@@ -1335,15 +1323,14 @@ bottom: 280px;
   </div>
 </div>
 
-<div class="MMM" id="MMM" style="display: none;">
+<div class="MMM" id="MMM" style="display: flex;">
   <div class="mmm-content">
     <p class="mmm-text">
       Недостаточно ресурсов! <br>
       Выбери доступную технологию или перераспредели имеющиеся ресурсы.
     </p>
     <div class="mmm-buttons">
-      <button class="mmm-close_2">Сбросить</button>
-      <button class="mmm-close">Завершить</button>
+      <button class="mmm-close_2">Продолжить</button>
     </div>
   </div>
 </div>
@@ -1482,14 +1469,12 @@ const closeBtn_2 = document.querySelector(".closeBtn_2");
 const modal_2 = document.getElementById("myModal");
 const Btn = document.querySelector(".btn-complete");
 const retryBtn = document.getElementById("retryBtn");
-const retryBtn_2 = document.querySelector(".mmm-close");
 const retryBtn_3 = document.querySelector(".mmm-close_2");
 retryBtn_3.onclick = ()=>{
-        window.location.href = "game4.html"; // замените на свой URL
+          const modal = document.getElementById("MMM");
+  modal.style.display = "none";
 }
-retryBtn_2.onclick = ()=>{
-        window.location.href = "game4.html"; // замените на свой URL
-}
+
 retryBtn.onclick = ()=>{
         window.location.href = "game4.html"; // замените на свой URL
 }
@@ -1522,28 +1507,6 @@ if (totalCoeff >= 60) {
 else{
     modal_2.style.display = "flex"; // flex, чтобы центрировать
 }
-  document.querySelector(".menu-right .text_i").textContent = totalCost;
-    console.log(totalCost)
-if (totalCost <=0) {
-  // window.location.href = "geme6.html";  // старый код
-  
-  // Новый код - показываем модалку
-  const modal = document.getElementById("MMM");
-  modal.style.display = "flex";
-
-  // Закрытие по кнопке
-  modal.querySelector(".mmm-close").onclick = () => {
-      window.location.href = "game4.html"; // замените на свой URL
-  };
-
-  // Закрытие при клике вне окна
-  window.onclick = (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
-}
-
 }
 
 
@@ -1555,6 +1518,21 @@ function hideModal() {
 function updateCost() {
   document.querySelector(".menu-right .text_i").textContent = totalCost;
     console.log(totalCost)
+    if (totalCost <=0) {
+  // window.location.href = "geme6.html";  // старый код
+  
+  // Новый код - показываем модалку
+  const modal = document.getElementById("MMM");
+  modal.style.display = "flex";
+
+
+  // Закрытие при клике вне окна
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+}
 }
 
 // Обновление характеристик
@@ -1614,7 +1592,9 @@ document.querySelectorAll(".card").forEach((card, index) => {
       modal.style.display = "flex";
 
     } else {
-      console.log("Error");
+  // Новый код - показываем модалку
+  const modal = document.getElementById("MMM");
+  modal.style.display = "flex";
     }
   });
 });
@@ -1849,11 +1829,6 @@ document.querySelectorAll(".platform-image").forEach(platformImg => {
   });
 });
 
-setInterval(() => {
-  if (totalCost <= 0) {
-    updateCost();
-  }
-}, 1000);
 
 
 
